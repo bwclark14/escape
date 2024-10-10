@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Code Cracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escape Room Challenge</h1>
+
+        <div class="question" id="question1">
+            <p>Question 1: What is 5 + 3?</p>
+            <input type="text" id="answer1" placeholder="Enter your answer">
+            <button onclick="checkAnswer(1, '8')">Submit</button>
+            <p class="feedback" id="feedback1"></p>
+        </div>
+
+        <div class="question" id="question2" style="display: none;">
+            <p>Question 2: What is the capital of France?</p>
+            <input type="text" id="answer2" placeholder="Enter your answer">
+            <button onclick="checkAnswer(2, 'paris')">Submit</button>
+            <p class="feedback" id="feedback2"></p>
+        </div>
+
+        <div class="question" id="question3" style="display: none;">
+            <p>Question 3: What is 12 * 12?</p>
+            <input type="text" id="answer3" placeholder="Enter your answer">
+            <button onclick="checkAnswer(3, '144')">Submit</button>
+            <p class="feedback" id="feedback3"></p>
+        </div>
+
+        <div class="question" id="question4" style="display: none;">
+            <p>Question 4: Which planet is known as the Red Planet?</p>
+            <input type="text" id="answer4" placeholder="Enter your answer">
+            <button onclick="checkAnswer(4, 'mars')">Submit</button>
+            <p class="feedback" id="feedback4"></p>
+        </div>
+
+        <div class="question" id="question5" style="display: none;">
+            <p>Question 5: What is the square root of 81?</p>
+            <input type="text" id="answer5" placeholder="Enter your answer">
+            <button onclick="checkAnswer(5, '9')">Submit</button>
+            <p class="feedback" id="feedback5"></p>
+        </div>
+
+        <div id="successMessage" style="display: none;">
+            <h2>Congratulations! You cracked the code!</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
